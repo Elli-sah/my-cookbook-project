@@ -1,13 +1,71 @@
+html {
+  height: 100%;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-image: url(../assets/olga-thelavart-HZm2XR0whdw-unsplash.jpg); */
+  background-color: rgb(229, 229, 190);
+  color: black;
+  font-family: Alegreya;
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  height: fit-content;
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: dancing, sans-serif;
+  text-align: center;
+  cursor: default;
+}
+
+h1 {
+  margin: 0 10px 0px 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.view-divs {
+  height: fit-content;
+  width: 100%;
+}
+
+.nav li {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(253, 164, 56);
+}
+
+@font-face {
+  font-family: Dancing;
+  src: url(../assets/Fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Alegreya;
+  src: url(../assets/Fonts/Alegreya_Sans_SC/AlegreyaSansSC-Regular.ttf);
 }

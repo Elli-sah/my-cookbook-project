@@ -1,0 +1,83 @@
+.start-top-pic {
+  background-image: url(../../assets/pictures/anastasia-zhenina-QpV04KkpFcA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  margin: 0;
+  margin-top: 2px;
+  border-bottom: solid;
+}
+
+.start-heading {
+  padding: 10px 0 5px 10px;
+  width: 170px;
+  color: rgb(255, 179, 97);
+}
+
+.line {
+  width: 150px;
+  height: 2px;
+  background-color: rgb(255, 179, 97);
+  margin-left: 10px;
+}
+
+.start-text {
+  padding: 10px 0 5px 10px;
+  width: 170px;
+  color: white;
+}
+
+.start-block-1 {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.image-b1 {
+  background-image: url(../../assets/pictures/syd-wachs-epqNIYI6S7E-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  border-right: solid;
+  margin-right: 0.5px;
+  border-top: solid;
+}
+
+.text-b1 {
+  background-color: rgb(243, 243, 183);
+  width: 50%;
+  margin-left: 0.5px;
+  border-top: solid;
+}
+
+.about-heading {
+  font-size: xx-large;
+}
+
+.start-categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin: 20px;
+  width: auto;
+}
+
+.start-block-2 {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.image-b2 {
+  background-image: url(../../assets/pictures/vita-marija-murenaite-5zwJhcEc5rk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+
+.text-b2 {
+  width: 50%;
+  border-right: solid;
+}

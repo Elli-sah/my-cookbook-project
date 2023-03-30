@@ -1,25 +1,73 @@
-import logo from './logo.svg';
-import './App.css';
+// import { HashRouter, Routes, Route } from "react-router-dom";
+// import HomeView from "./views/HomeView";
+// import RecipeView from "./views/RecipeView";
+// import LoginView from "./views/LoginView";
+// import Navbar from "./components/Navbar";
+// import Footer from "./components/Footer";
 
-function App() {
+// function App() {
+//   return (
+//     <HashRouter>
+//       <header>
+//         <div>
+//           <Navbar />
+//           <main></main>
+//           <Footer />
+//           <Routes>
+//             <Route path="/" element={<HomeView />} />
+//             <Route path="/Recipes" component={<RecipeView />} />
+//             <Route path="/Login" component={<LoginView />} />
+//           </Routes>
+//         </div>
+//       </header>
+//     </HashRouter>
+//   );
+// }
+
+// export default App;
+import "./index.css";
+import HomeView from "./views/HomeView";
+import RecipeView from "./views/RecipeView";
+import LoginView from "./views/LoginView";
+import FavoritesView from "./views/FavoritesView";
+import ShoppingListView from "./views/ShoppingListView";
+import OwnRecipeView from "./views/OwnRecipeView";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+import { createHashRouter, Outlet, RouterProvider } from "react-router-dom";
+
+function Root() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
     </div>
   );
+}
+
+function App() {
+  const router = createHashRouter([
+    {
+      children: [
+        { element: <HomeView />, path: "/" },
+        { element: <RecipeView />, path: "/Recipes/:id" },
+        { element: <RecipeView />, path: "/Recipes" },
+        { element: <FavoritesView />, path: "/Favorites" },
+        { element: <ShoppingListView />, path: "/Shoppinglist" },
+        { element: <OwnRecipeView />, path: "/My-recipes" },
+
+        { element: <LoginView />, path: "/Login" },
+      ],
+      element: <Root />,
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;

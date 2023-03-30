@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "recipe_name": "Flygande Jakob",
+    "servings": "2-4 pers",
+    "time": "40 min",
+    "image": "",
+
+    "ingredients": [
+      "4 dl ris",
+      "1 gul lök, hackad",
+      "2 vitlöksklyftor, hackade",
+      "1 msk olja",
+      "2 dl växtbaserad grädde (t.ex. havregrädde)",
+      "1 dl jordnötssmör",
+      "1 msk sojasås",
+      "1 tsk chilipulver",
+      "1 tsk paprikapulver",
+      "1 tsk currypulver",
+      " 1 dl rostade jordnötter, hackade",
+      " 1 banan, skivad",
+      "1 påse vegansk bacon eller tempeh bacon, skivad"
+    ],
+
+    "instructions": [
+      "Koka riset enligt anvisningarna på förpackningen.",
+      "Under tiden, stek löken och vitlöken i oljan tills de är mjuka.",
+      "Tillsätt grädde, jordnötssmör, sojasås, chilipulver, paprikapulver och currypulver. Rör om tills allt är väl blandat och såsen har blivit krämig.",
+      "Lägg bananskivorna i botten av en ugnsform och häll såsen över bananerna.",
+      "Strö över den skivade veganska baconen eller tempeh baconen och de hackade jordnötterna.",
+      "Gratinera i ugnen på 200 grader i cirka 20 minuter eller tills baconet är krispigt och allt är genomvarmt.",
+      "Servera tillsammans med det kokta riset."
+    ],
+    "category": "Varmrätter"
+  },
+
+  {
+    "id": 2,
+    "recipe_name": "Vegansk Lasagne",
+    "servings": "2-4 pers",
+    "time": "60-70 minutes",
+    "image": "",
+
+    "ingredients": [
+      "9 lasagneplattor",
+      "1/2 lök, hackad",
+      "1 vitlöksklyfta, hackad",
+      "1 msk olivolja",
+      "200 g krossade tomater",
+      "1 msk tomatpuré",
+      "1 tsk torkad basilika",
+      "1 tsk torkad oregano",
+      "Salt och peppar efter smak",
+      "1/2 paket (à 150 g) vegansk färs (t.ex. Anamma)",
+      "1/2 paket (à 125 g) vegansk riven ost (t.ex. Wilmersburger)",
+      "1/2 kruka färsk basilika"
+    ],
+    "instructions": [
+      "Förvärm ugnen till 200°C.",
+      "Koka lasagneplattorna enligt anvisningarna på förpackningen. När de är färdiga, häll av vattnet och ställ åt sidan.",
+      "Värm upp olivolja i en stekpanna på medelhög värme. Tillsätt den hackade löken och vitlöken och stek tills löken är mjuk, ca 5 minuter.",
+      "Tillsätt de krossade tomaterna, tomatpurén, basilika, oregano, salt och peppar till stekpannan. Rör om och låt koka i ca 5 minuter.",
+      "Tillsätt den veganska färsen till stekpannan och rör om tills allt är väl blandat.",
+      "Ta en ugnsform som rymmer ca 1 liter och börja med ett tunt lager av tomatsås på botten.",
+      "Lägg ut 3 lasagneplattor ovanpå såsen.",
+      "Täck lasagneplattorna med ett tunt lager av tomatsås och strö över lite av den veganska osten.",
+      "Lägg ut 3 lasagneplattor ovanpå osten.",
+      "Täck lasagneplattorna med ett tunt lager av tomatsås och strö över lite av den veganska osten.",
+      "Lägg ut de sista 3 lasagneplattorna på toppen och täck med resten av tomatsåsen.",
+      "Strö över resten av"
+    ],
+
+    "category": "Varmrätter"
+  },
+  {
+    "id": 3,
+    "recipe_name": "Potatisgratäng",
+    "servings": "2-4 pers",
+    "time": "60 min",
+    "image": "",
+
+    "ingredients": [
+      "4 stora potatisar, skalade och tunt skivade",
+      "1 gul lök, skalad och tunt skivad",
+      "2 dl havregrädde",
+      "2 msk vegansk margarin",
+      "2 vitlöksklyftor, pressade",
+      "1 tsk salt",
+      "1/2 tsk svartpeppar",
+      "1 tsk torkad timjan"
+    ],
+    "instructions": [
+      "Sätt ugnen på 200 grader.",
+      "Skala och skiva potatisen tunt.",
+      "Smörj en ugnsform med vegansk margarin.",
+      "Lägg ett lager av potatisskivor i botten av formen, följt av ett lager av lök och vitlök.",
+      "Upprepa lagren tills ingredienserna är slut.",
+      "Strö över vetemjölet och rör om försiktigt.",
+      "Smält 2 msk vegansk margarin i en kastrull på medelvärme.",
+      "Tillsätt Havregrädde och torkad timjan och rör om.",
+      "Koka upp och låt sjuda i 5 minuter tills såsen tjocknar.",
+      "Smaka av med salt och svartpeppar efter smak.",
+      "Häll såsen över potatisen och täck formen med aluminiumfolie.",
+      "Grädda i ugnen i cirka 45 minuter.",
+      "Ta bort folien och grädda i ytterligare 10-15 minuter tills potatisen är mjuk och gratängen har fått en fin gyllene färg.",
+      "Servera och njut!"
+    ],
+
+    "category": "Varmrätter"
+  },
+  {
+    "id": 4,
+    "recipe_name": "Pasta med Svampsås",
+    "servings": "4",
+    "time": "25-30 minuter",
+
+    "ingredients": [
+      "400 g pasta",
+      "500 g champinjoner, skivade",
+      "1 gul lök, hackad",
+      "2 vitlöksklyftor, hackade",
+      "2 msk olivolja",
+      "2 msk vetemjöl",
+      "2 dl osötad mandelmjölk",
+      "2 dl grönsaksbuljong",
+      "1 tsk torkad timjan",
+      "1 tsk torkad rosmarin",
+      "1 tsk salt",
+      "1/2 tsk svartpeppar"
+    ],
+    "instructions": [
+      "Koka pastan enligt anvisningarna på förpackningen och låt den rinna av.",
+      "Hetta upp olivoljan i en stor stekpanna på medelhög värme. Tillsätt lök och vitlök och stek tills löken är mjuk och genomskinlig.",
+      "Tillsätt champinjonerna och stek i ca 5 minuter tills de är mjuka och gyllenbruna.",
+      "Tillsätt vetemjölet och rör om så att det täcker svampen och löken. Tillsätt mandelmjölken, grönsaksbuljongen, timjan, rosmarin, salt och svartpeppar. Rör om och låt såsen sjuda i ca 5-7 minuter tills den tjocknar.",
+      "Häll svampsåsen över den kokta pastan och blanda väl.",
+      "Servera genast och njut av din veganska pasta med svampsås!"
+    ],
+
+    "category": "Varmrätter"
+  },
+
+  {
+    "id": 5,
+    "recipe_name": "Vegansk Chili sin Carne",
+    "servings": "2-4",
+    "time": "30-40 minuter",
+    "image": "",
+
+    "ingredients": [
+      "1 msk olivolja",
+      "1 lök, hackad",
+      "2 vitlöksklyftor, hackade",
+      "1 röd paprika, hackad",
+      "1 grön paprika, hackad",
+      "1 zucchini, hackad",
+      "1 burk kidneybönor (400 g), sköljda och avrunna",
+      "1 burk svarta bönor (400 g), sköljda och avrunna",
+      "1 burk krossade tomater (400 g)",
+      "1 msk tomatpuré",
+      "1 tsk chilipulver",
+      "1 tsk spiskummin",
+      "1 tsk torkad oregano",
+      "1 tsk salt",
+      "1/2 tsk svartpeppar",
+      "2 dl vatten",
+      "1 msk majsstärkelse"
+    ],
+    "instructions": [
+      "Hetta upp olivoljan i en stor stekpanna på medelhög värme. Tillsätt lök och vitlök och stek tills löken är mjuk och genomskinlig.",
+      "Tillsätt paprikorna och zucchinin och stek i ca 5 minuter tills grönsakerna är mjuka.",
+      "Tillsätt de sköljda och avrunna kidneybönorna och svarta bönorna. Rör om så att allt blandas väl.",
+      "Tillsätt krossade tomater, tomatpuré, chilipulver, spiskummin, oregano, salt, svartpeppar och vatten. Rör om och låt sjuda i ca 15 minuter.",
+      "Blanda majsstärkelse med 2 msk vatten och tillsätt det i grytan. Rör om så att såsen tjocknar något.",
+      "Servera din veganska chili sin carne varm tillsammans med ris, bröd eller en sallad."
+    ],
+
+    "category": "Varmrätter"
+  },
+  {
+    "id": 6,
+    "recipe_name": "Vegansk Pad Thai",
+    "servings": "2-4",
+    "time": "25-30 minuter",
+    "image": "",
+
+    "ingredients": [
+      "200 g risnudlar",
+      "1 msk olivolja",
+      "2 vitlöksklyftor, hackade",
+      "1 röd lök, hackad",
+      "2 morötter, tunt skivade",
+      "2 vårlökar, hackade",
+      "150 g tofu, tärnad",
+      "1/4 kopp jordnötter, hackade",
+      "1 lime, saften",
+      "2 msk sojasås",
+      "1 msk agavesirap",
+      "1 tsk risvinäger",
+      "1 tsk tamarindsås",
+      "1/2 tsk salt",
+      "1/2 tsk svartpeppar",
+      "färsk koriander till servering"
+    ],
+    "instructions": [
+      "Koka risnudlarna enligt anvisningarna på förpackningen. Låt sedan rinna av.",
+      "Hetta upp olivoljan i en wok eller stor stekpanna på medelhög värme. Tillsätt vitlök och rödlök och stek i ca 1 minut tills löken är mjuk.",
+      "Tillsätt morötter, vårlök och tofu och stek i ca 5 minuter tills grönsakerna är mjuka och tofu är gyllenbrun.",
+      "Tillsätt jordnötter, limejuice, sojasås, agavesirap, risvinäger, tamarindsås, salt och svartpeppar. Blanda väl och stek i ytterligare 2-3 minuter tills allt är varmt.",
+      "Tillsätt de kokta risnudlarna och blanda väl så att nudlarna täcks av såsen och grönsakerna.",
+      "Servera din veganska Pad Thai varm tillsammans med färsk koriander på toppen."
+    ],
+
+    "category": "Varmrätter"
+  },
+
+  {
+    "id": 7,
+    "recipe_name": "Mango Tango med Sticky Rice",
+    "servings": "2-4",
+    "time": "45-60 minuter",
+    "image": "",
+
+    "ingredients": [
+      "1 1/2 kopp klebreis (sticky rice)",
+      "1 1/2 kopp vatten",
+      "1/2 kopp kokosmjölk",
+      "1/4 kopp socker",
+      "1/4 tsk salt",
+      "2 mogna mangos, skalade och skivade",
+      "1/4 kopp sesamfrön, rostade"
+    ],
+    "instructions": [
+      "Skölj den klebreis i kallt vatten och blötlägg i minst 30 minuter, men helst över natten.",
+      "Häll av vattnet och lägg riset i en ångkorg. Placera ångkorgen i en kastrull med vatten och koka riset på medelhög värme i ca 25-30 minuter eller tills det är mjukt.",
+      "I en separat kastrull, tillsätt kokosmjölk, socker och salt och värm upp på medelhög värme. Rör om tills sockret har lösts upp.",
+      "Tillsätt kokosmjölkblandningen till det kokta riset och blanda väl. Låt svalna i ca 10 minuter.",
+      "När riset har svalnat, placera de skivade mangobitarna på toppen och strö över rostade sesamfrön.",
+      "Servera din Mango Tango med Sticky Rice som en härlig dessert eller som ett mellanmål!"
+    ],
+
+    "category": "Efterrätter"
+  },
+  {
+    "id": 8,
+    "recipe_name": "Bär Smoothie Bowl",
+    "servings": "1",
+    "time": "10 minuter",
+    "image": "",
+
+    "ingredients": [
+      "1 fryst banan",
+      "1/2 kopp frysta bär (t.ex. blåbär, hallon, jordgubbar)",
+      "1/2 kopp osötad mandelmjölk",
+      "1 msk chiafrön",
+      "1 msk jordnötssmör",
+      "Toppings: färska bär, kokosflingor, granola"
+    ],
+    "instructions": [
+      "Lägg den frysta bananen, de frysta bären, mandelmjölken, chiafröna och jordnötssmöret i en mixer. Mixa på hög hastighet tills det blir en slät konsistens.",
+      "Häll smoothien i en skål och dekorera med färska bär, kokosflingor och granola.",
+      "Servera och njut av din läckra smoothie bowl!"
+    ],
+
+    "category": "Frukost"
+  },
+  {
+    "id": 9,
+    "recipe_name": "Grön Hummus på Rostat Bröd",
+    "servings": "1",
+    "time": "10 minuter",
+    "ingredients": [
+      "2 skivor rostat bröd",
+      "1/2 kopp kikärtor, avrunna och sköljda",
+      "1/2 avokado",
+      "1/2 citron, saften",
+      "1 liten vitlöksklyfta",
+      "1/4 kopp färsk basilika",
+      "1/4 tsk salt",
+      "1/4 tsk svartpeppar",
+      "1 msk olivolja",
+      "Toppings: rädisor, salladsblad, gurka, persilja"
+    ],
+    "instructions": [
+      "Lägg de rostade brödskivorna på en tallrik.",
+      "Tillsätt kikärtorna, avokado, citronsaft, vitlök, basilika, salt, svartpeppar och olivolja i en mixer. Mixa på hög hastighet tills det blir en slät konsistens.",
+      "Bred ut hummusen på de rostade brödskivorna.",
+      "Dekorera med rädisor, salladsblad, gurka, persilja eller andra önskade toppings.",
+      "Servera och njut av ditt läckra veganska mellanmål!"
+    ],
+
+    "category": "Mellanmål"
+  },
+
+  {
+    "id": 10,
+    "recipe_name": "Tomatsallad med Avokado och Balsamico Dressing",
+    "servings": "2",
+    "time": "10 minuter",
+    "image": "",
+
+    "ingredients": [
+      "2 stora tomater",
+      "1 avokado",
+      "1/4 rödlök, tunt skivad",
+      "1/4 kopp färsk basilika, hackad",
+      "1/4 kopp balsamvinäger",
+      "2 msk olivolja",
+      "1 tsk dijonsenap",
+      "1 tsk honung (eller annan sötning)",
+      "Salt och svartpeppar efter smak"
+    ],
+    "instructions": [
+      "Skär tomaterna i klyftor och skiva avokadon.",
+      "Lägg tomatklyftorna och avokadon i en stor skål tillsammans med den tunt skivade rödlöken och den hackade basilikan.",
+      "I en separat skål, vispa ihop balsamvinäger, olivolja, dijonsenap och honung tills allt är väl blandat.",
+      "Häll dressingen över tomat- och avokadosalladen och blanda väl.",
+      "Smaka av med salt och svartpeppar.",
+      "Servera och njut av din läckra veganska kallrätt!"
+    ],
+
+    "category": "Kallrätter"
+  },
+  {
+    "id": 11,
+    "recipe_name": "Vegansk Bruschetta",
+    "servings": "2-4 pers",
+    "time": "20 minuter",
+    "image": "",
+
+    "ingredients": [
+      "1 baguette",
+      " 4-6 stora tomater",
+      "3-4 vitlöksklyftor",
+      "1/2 kopp färsk basilika",
+      "4 msk extra jungfruolivolja",
+      "2 msk balsamvinäger",
+      "Salt och peppar efter smak"
+    ],
+
+    "instructions": [
+      "Värm ugnen till 200°C.",
+      "Skär baguetten i skivor och lägg ut dem på en bakplåtspapperklädd plåt.",
+      "Skiva tomaterna och hacka vitlöken och basilikan.",
+      "Blanda tomaterna, vitlöken och basilikan i en skål och tillsätt olivolja, balsamvinäger, salt och peppar. Blanda väl.",
+      "Lägg ut tomatblandningen på brödskivorna och rosta dem i ugnen i cirka 10 minuter tills brödet är lätt rostat och tomatblandningen är varm.",
+      "Ta ut från ugnen och servera direkt."
+    ],
+
+    "category": "Förrätter"
+  }
+]
