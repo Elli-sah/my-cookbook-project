@@ -39,7 +39,7 @@
     "recipe_name": "Vegansk Lasagne",
     "servings": "2-4 pers",
     "time": "60-70 minutes",
-    "image": "",
+    "image": "Lasagne.jpg",
 
     "ingredients": [
       "9 lasagneplattor",
@@ -67,7 +67,10 @@
       "Lägg ut 3 lasagneplattor ovanpå osten.",
       "Täck lasagneplattorna med ett tunt lager av tomatsås och strö över lite av den veganska osten.",
       "Lägg ut de sista 3 lasagneplattorna på toppen och täck med resten av tomatsåsen.",
-      "Strö över resten av"
+      "Strö över resten av den veganska osten och toppa med färsk basilika.",
+      "Täck formen med aluminiumfolie och baka i ugnen i 20 minuter.",
+      "Ta av aluminiumfolien och baka lasagnen i ytterligare 10-15 minuter eller tills osten har smält och lasagnen är genomvarm och gyllenbrun.",
+      "Låt lasagnen vila i ca 10 minuter före servering."
     ],
 
     "category": "Varmrätter"
@@ -262,7 +265,7 @@
       "Servera och njut av din läckra smoothie bowl!"
     ],
 
-    "category": "Frukost"
+    "category": "Brunch"
   },
   {
     "id": 9,
@@ -348,5 +351,29 @@
     ],
 
     "category": "Förrätter"
+  },
+  {
+    "id": 12,
+    "recipe_name": "Vegansk chokladmousse",
+    "servings": "4-6 pers",
+    "time": "20 min + 2 timmar i kylen",
+    "image": "",
+
+    "ingredients": [
+      "1 avokado",
+      "1 dl mandelmjölk",
+      "1/2 dl agavesirap",
+      "1 msk vaniljsocker",
+      "3 msk kakao"
+    ],
+
+    "instructions": [
+      "Skala och kärna ur avokadon och lägg den i en mixer eller matberedare.",
+      "Tillsätt mandelmjölk, agavesirap, vaniljsocker och kakao och mixa tills allt är helt slätt och krämigt.",
+      "Fördela moussen i fyra till sex små glas eller skålar.",
+      "Ställ moussen i kylen i minst två timmar före servering.",
+      "Servera och njut!"
+    ],
+    "category": ["Efterrätter"]
   }
 ]

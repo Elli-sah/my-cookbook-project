@@ -1,6 +1,6 @@
 function Favorites() {
   return (
-    <div>
+    <div className="view-divs">
       <h2>Favoriter</h2>
     </div>
   );

@@ -5,11 +5,11 @@
 } */
 
 .header {
-  background-color: rgba(255, 152, 78, 0.975);
+  background-color: #986b40;
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: right;
 }
 
 .nav-text {
@@ -163,4 +163,8 @@
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease;
+}
+
+.menu {
+  z-index: 105;
 }

@@ -5,4 +5,4 @@ function shoppingList() {
     </div>
   );
 }
-export default shoppingList;
+export default shoppingList

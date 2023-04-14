@@ -1,31 +1,37 @@
 .start-top-pic {
-  background-image: url(../../assets/pictures/anastasia-zhenina-QpV04KkpFcA-unsplash.jpg);
+  background-image: url(../../assets/pictures/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg);
   background-size: cover;
   background-position: center;
   height: 500px;
   width: 100%;
   margin: 0;
-  margin-top: 2px;
+  /* margin-top: 2px; */
   border-bottom: solid;
 }
 
 .start-heading {
-  padding: 10px 0 5px 10px;
+  margin-left: 20px;
+  font-size: 60px;
+  padding: 30px 0 5px 20px;
   width: 170px;
-  color: rgb(255, 179, 97);
+  color: rgb(221, 120, 13);
 }
 
 .line {
-  width: 150px;
+  width: 300px;
   height: 2px;
   background-color: rgb(255, 179, 97);
   margin-left: 10px;
 }
 
 .start-text {
+  margin: auto;
+  margin-top: 10px;
   padding: 10px 0 5px 10px;
-  width: 170px;
+  width: 90%;
   color: white;
+  border-radius: 9px;
+  /* background-color: rgba(16, 16, 16, 0.464); */
 }
 
 .start-block-1 {
@@ -38,30 +44,61 @@
   background-image: url(../../assets/pictures/syd-wachs-epqNIYI6S7E-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  width: 50%;
+  width: 40%;
   border-right: solid;
-  margin-right: 0.5px;
   border-top: solid;
 }
 
 .text-b1 {
-  background-color: rgb(243, 243, 183);
-  width: 50%;
-  margin-left: 0.5px;
+  background-color: white;
+  width: 60%;
   border-top: solid;
+  padding: 10px;
 }
 
 .about-heading {
   font-size: xx-large;
+  margin: 10px;
 }
 
 .start-categories {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
+  flex-direction: row;
   margin: 20px;
-  width: auto;
+  overflow-x: auto;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.brunch {
+  background-image: url(../../assets/pictures/sam-moghadam-khamseh-yxZSAjyToP4-unsplash.jpg);
+}
+
+.snack {
+  background-image: url(../../assets/pictures/aigars-peda-a_iKAg00LN4-unsplash.jpg);
+}
+
+.main-dish {
+  background-image: url(../../assets/pictures/jonathan-borba-KSAThuJ9mjs-unsplash.jpg);
+}
+
+.round-categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(244, 196, 124);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 20px;
+  padding: 15px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+.round-categories:hover {
+  transform: scale(1.1);
 }
 
 .start-block-2 {
@@ -71,13 +108,19 @@
 }
 
 .image-b2 {
+  border-top: solid;
+  border-bottom: solid;
   background-image: url(../../assets/pictures/vita-marija-murenaite-5zwJhcEc5rk-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  width: 50%;
+  width: 40%;
 }
 
 .text-b2 {
-  width: 50%;
+  width: 60%;
+  border-bottom: solid;
+  border-top: solid;
   border-right: solid;
+  background-color: white;
+  padding: 10px;
 }

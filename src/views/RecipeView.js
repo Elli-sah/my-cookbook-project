@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CategoryList from "../components/CategoryList";
+// import Recipes from "../components/Recipes";
 
 function FetchedData() {
   const [recipeData, setRecipeData] = useState(null);
@@ -16,10 +17,13 @@ function FetchedData() {
 
   return (
     <div className="view-divs">
+      <div></div>
       <div>
         <CategoryList />
       </div>
-      <h1>Recept</h1>
+      <div>{/* <Recipes /> */}</div>
+      {/* <h1>Recept</h1>
+
       {recipeData &&
         recipeData.map((recipe) => (
           <div className="recipe-boxes" key={recipe.id}>
@@ -37,7 +41,7 @@ function FetchedData() {
               ))}
             </ol>
           </div>
-        ))}
+        ))} */}
     </div>
   );
 }

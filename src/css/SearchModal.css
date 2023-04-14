@@ -1,0 +1,11 @@
+.modal-dialog {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.search-field {
+  width: 300px;
+  border-radius: 9px;
+  margin: 20px;
+}

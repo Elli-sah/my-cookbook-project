@@ -9,7 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-image: url(../assets/olga-thelavart-HZm2XR0whdw-unsplash.jpg); */
-  background-color: rgb(229, 229, 190);
+  background-color: rgb(255, 255, 255);
   color: black;
   font-family: Alegreya;
   background-size: 100%;
@@ -38,7 +38,9 @@ h1 {
 }
 .view-divs {
   height: fit-content;
+  min-height: 950px;
   width: 100%;
+  padding: 0 0 100px 0;
 }
 
 .nav li {
@@ -53,14 +55,6 @@ a:visited {
   color: black;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: fit-content;
-  background-color: rgb(253, 164, 56);
-}
-
 @font-face {
   font-family: Dancing;
   src: url(../assets/Fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
@@ -68,4 +62,8 @@ footer {
 @font-face {
   font-family: Alegreya;
   src: url(../assets/Fonts/Alegreya_Sans_SC/AlegreyaSansSC-Regular.ttf);
+}
+@font-face {
+  font-family: serendipity;
+  src: url(../assets/Fonts/serendipity/Serendipity.ttf);
 }

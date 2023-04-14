@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
-import { CiSearch } from "react-icons/ci";
 // import { RxHamburgerMenu } from "react-icons/rx";
 import { VscAccount } from "react-icons/vsc";
 import { VscHeart } from "react-icons/vsc";
+import SearchModal from "./SearchModal";
+import ShoppingListModal from "./ShoppingListModal";
 
 import "../css/Navbar.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  // const [showModal, setShowModal] = useState(false);
 
   const handleToggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -18,21 +20,26 @@ function Navbar() {
     setMenuOpen(false);
   };
 
+  // // Function to toggle the visibility of the modal
+  // const handleModalToggle = () => {
+  //   setShowModal(!showModal);
+  // };
+
   return (
     <header>
       <nav>
         <div className="header">
-          <div class="menu-wrap">
+          <div className="menu-wrap">
             <input
               type="checkbox"
-              class="toggler"
+              className="toggler"
               checked={menuOpen}
               onChange={handleToggleMenu}
             />
-            <div class="hamburger">
+            <div className="hamburger">
               <div></div>
             </div>
-            <div class="menu">
+            <div className="menu">
               <div>
                 <div>
                   <ul className="nav">
@@ -64,8 +71,12 @@ function Navbar() {
           <div className="nav-text">
             <Link to="/">Kokboken.se</Link>
           </div>
+
           <div>
-            <CiSearch className="nav-icons" />
+            <SearchModal />
+          </div>
+          <div>
+            <ShoppingListModal />
           </div>
           <div>
             <Link to="/Favorites">

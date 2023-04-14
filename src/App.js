@@ -31,12 +31,13 @@ import RecipeView from "./views/RecipeView";
 import LoginView from "./views/LoginView";
 import FavoritesView from "./views/FavoritesView";
 import ShoppingListView from "./views/ShoppingListView";
-import OwnRecipeView from "./views/OwnRecipeView";
+import SubmitRecipeView from "./views/SubmitRecipeView";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import { createHashRouter, Outlet, RouterProvider } from "react-router-dom";
+import CategoryList from "./components/CategoryList";
 
 function Root() {
   return (
@@ -55,11 +56,13 @@ function App() {
     {
       children: [
         { element: <HomeView />, path: "/" },
+        { element: <CategoryList />, path: "/category/:id" },
+        { element: <RecipeView />, path: "/Recipes/:id/:id" },
         { element: <RecipeView />, path: "/Recipes/:id" },
         { element: <RecipeView />, path: "/Recipes" },
         { element: <FavoritesView />, path: "/Favorites" },
         { element: <ShoppingListView />, path: "/Shoppinglist" },
-        { element: <OwnRecipeView />, path: "/My-recipes" },
+        { element: <SubmitRecipeView />, path: "/My-recipes" },
 
         { element: <LoginView />, path: "/Login" },
       ],
