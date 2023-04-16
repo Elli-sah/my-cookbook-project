@@ -21,7 +21,7 @@ function SubmitRecipe(props) {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Name:
+        Namn:
         <input
           type="text"
           value={name}
@@ -30,7 +30,7 @@ function SubmitRecipe(props) {
       </label>
       <br />
       <label>
-        Ingredients:
+        Ingredienser:
         <textarea
           value={ingredients}
           onChange={(e) => setIngredients(e.target.value)}
@@ -38,14 +38,14 @@ function SubmitRecipe(props) {
       </label>
       <br />
       <label>
-        Instructions:
+        Instruktioner:
         <textarea
           value={instructions}
           onChange={(e) => setInstructions(e.target.value)}
         />
       </label>
       <br />
-      <button type="submit">Add Recipe</button>
+      <button type="submit">Lägg till Recept</button>
     </form>
   );
 }

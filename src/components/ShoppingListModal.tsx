@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/ShoppingListModal.css";
-// import { GrClose } from "react-icons/gr";
-import { RiFilePaper2Line } from "react-icons/ri";
+import { RiTodoLine } from "react-icons/ri";
 import { Modal, Button } from "react-bootstrap";
 
 interface ShoppingItem {
@@ -73,7 +72,7 @@ const ShoppingListModal: React.FC = () => {
 
   return (
     <>
-      <RiFilePaper2Line
+      <RiTodoLine
         onClick={handleModalOpen}
         className="open-modal-button nav-icons"
       />

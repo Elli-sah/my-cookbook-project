@@ -1,4 +1,5 @@
 import "../css/HomeView.css";
+import { Link } from "react-router-dom";
 
 function home() {
   return (
@@ -28,13 +29,28 @@ function home() {
       </div>
       {/* <div className="box"> */}
       <div className="start-categories">
-        <div className="round-categories brunch ">Brunch</div>
-        <div className="round-categories snack">Mellanmål</div>
-        <div className="round-categories evening">Kvällsmat</div>
-        <div className="round-categories starter">Förrätter</div>
-        <div className="round-categories main-dish">Varmrätter</div>
-        <div className="round-categories refreshments">Efterrätter</div>
-        <div className="round-categories cold-dishes">Kallrätter</div>
+        <Link to="/Recipes/Brunch">
+          <div className="round-categories brunch ">Brunch</div>
+        </Link>
+        <Link to="/Recipes/Mellanmål">
+          <div className="round-categories snack">Mellanmål</div>
+        </Link>
+        {/* <Link to="/Recipes/Kvällsmat">
+          <div className="round-categories evening">Kvällsmat</div>
+        </Link> */}
+        <Link to="/Recipes/Förrätter">
+          <div className="round-categories starter">Förrätter</div>
+        </Link>
+        <Link to="/Recipes/Varmrätter">
+          <div className="round-categories main-dish">Varmrätter</div>
+        </Link>
+        <Link to="/Recipes/Efterrätter">
+          {" "}
+          <div className="round-categories refreshments">Efterrätter</div>
+        </Link>
+        <Link to="/Recipes/Kallrätter">
+          <div className="round-categories cold-dishes">Kallrätter</div>
+        </Link>
       </div>
       {/* </div> */}
       <div className="start-block-1">
@@ -67,6 +83,9 @@ function home() {
             länken nedan och följa instruktionerna. Vi ser fram emot att se vad
             du har att dela med dig av!
           </p>
+          <Link to="/My-recipes">
+            <button>Till Din Kokbok</button>
+          </Link>
         </div>
         <div className="image-b2"></div>
       </div>

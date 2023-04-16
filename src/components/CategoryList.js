@@ -8,7 +8,6 @@ function CategoryList() {
   const [recipeData, setRecipeData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const { id } = useParams();
-  // const recipe = recipeData;
 
   useEffect(() => {
     fetch("./recipe.json")
@@ -28,12 +27,16 @@ function CategoryList() {
     );
   }, [recipeData, id]);
 
+  const handleRatingsClick = (event) => {
+    event.stopPropagation();
+  };
+
   return (
-    <div>
+    <div className="recipe-big-parent">
       <div className="category-links-box">
-        <li className="category-buttons">
+        {/* <li className="category-buttons">
           <Link to="/Recipes/">Alla recept</Link>
-        </li>
+        </li> */}
         <li className="category-buttons">
           <Link to="/Recipes/Förrätter">Förrätter</Link>
         </li>
@@ -54,28 +57,26 @@ function CategoryList() {
         </li>
       </div>
       <div>
-        {filteredData.length ? (
-          <div>
-            <h2>{filteredData[0].category}</h2>
+        <div>
+          <h2>{filteredData.length > 0 && filteredData[0].category}</h2>
 
-            <div className="big-box-recipes">
-              {filteredData.map((recipe) => (
-                <div className="recipe-boxes" key={recipe.id}>
-                  <Link to={`/Recipes/${recipe.recipe_name}`}>
-                    <div className="box-images"></div>
-                  </Link>
-                  <div className="recipe-links">
-                    <li>{recipe.recipe_name}</li>
-                    <li>{recipe.time}</li>
+          <div className="big-box-recipes">
+            {filteredData.map((recipe) => (
+              <div className="recipe-boxes" key={recipe.id}>
+                <Link to={`/Recipes/${recipe.category}/${recipe.id}`}>
+                  <div className="box-images"></div>
+                </Link>
+                <div className="recipe-links">
+                  <li>{recipe.recipe_name}</li>
+                  <li>{recipe.time}</li>
+                  <div onClick={handleRatingsClick}>
                     <Ratings id={recipe.id} />
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
-        ) : (
-          <p>Loading...</p>
-        )}
+        </div>
       </div>
     </div>
   );

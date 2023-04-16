@@ -2,6 +2,10 @@
   z-index: 101;
 }
 
+.nav-icons {
+  cursor: pointer;
+}
+
 .modal-container {
   position: fixed;
   top: 0;

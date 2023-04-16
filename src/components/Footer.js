@@ -26,7 +26,7 @@ function Footer() {
               </li>
               <li>
                 {" "}
-                <Link to="/#">Cookbook</Link>
+                <Link to="/My-recipes">Cookbook</Link>
               </li>
             </ul>
             <div>

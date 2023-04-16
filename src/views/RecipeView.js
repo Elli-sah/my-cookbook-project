@@ -1,48 +1,48 @@
-import React, { useState, useEffect } from "react";
-import CategoryList from "../components/CategoryList";
-// import Recipes from "../components/Recipes";
+import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
-function FetchedData() {
-  const [recipeData, setRecipeData] = useState(null);
+function RecipeView() {
+  const { id } = useParams();
+  const [recipeData, setRecipeData] = useState("");
 
   useEffect(() => {
-    fetch("/recipe.json")
+    console.log(id);
+    fetch("./recipe.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
-        setRecipeData(data);
+        const someData = data.filter((recipe) => recipe.id == id);
+        setRecipeData(someData);
+        console.log(someData, recipeData);
       })
       .catch((error) => console.log(error));
-  }, []);
+  }, [recipeData, id]);
 
   return (
-    <div className="view-divs">
-      <div></div>
-      <div>
-        <CategoryList />
-      </div>
-      <div>{/* <Recipes /> */}</div>
-      {/* <h1>Recept</h1>
-
-      {recipeData &&
-        recipeData.map((recipe) => (
-          <div className="recipe-boxes" key={recipe.id}>
-            <h2>{recipe.recipe_name}</h2>
-            <p>Portioner: {recipe.servings}</p>
-            <p>Tid: {recipe.time}</p>
+    <div>
+      {recipeData && recipeData.length > 0 && (
+        <div className="full-recipe" key={recipeData[0].id}>
+          <div className="box-shadow">
+            <h2>{recipeData[0].recipe_name}</h2>
+            <p>Portioner: {recipeData[0].servings}</p>
+            <p>Tid: {recipeData[0].time}</p>
             <ul>
-              {recipe.ingredients.map((ingredient, index) => (
+              {recipeData[0].ingredients.map((ingredient, index) => (
                 <li key={index}>{ingredient}</li>
               ))}
             </ul>
             <ol>
-              {recipe.instructions.map((instructions, index) => (
+              {recipeData[0].instructions.map((instructions, index) => (
                 <li key={index}>{instructions}</li>
               ))}
             </ol>
           </div>
-        ))} */}
+          <Link to="/Recipes">
+            <button>Tillbaka</button>
+          </Link>
+        </div>
+      )}
     </div>
   );
 }
-export default FetchedData;
+export default RecipeView;

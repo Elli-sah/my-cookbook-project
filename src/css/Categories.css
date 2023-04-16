@@ -12,6 +12,7 @@
   line-height: 40px;
   text-align: center;
 } */
+
 .category-buttons {
   display: flex;
   flex-direction: column;
@@ -26,9 +27,11 @@
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
 }
+
 .category-buttons:hover {
   transform: scale(1.1);
 }
+
 .category-links-box {
   display: flex;
   flex-direction: row;
@@ -38,13 +41,14 @@
   margin: 20px;
 }
 
-/* .box-images {
-} */
 .recipe-links {
   list-style: none;
-  height: 70px;
+  height: fit-content;
   color: white;
   background-color: rgba(0, 0, 0, 0.529);
+}
+.box-images {
+  height: 140px;
 }
 .recipe-boxes {
   display: flex;
@@ -55,13 +59,53 @@
   background-size: cover;
   background-color: white;
   border-radius: 10px;
-  /* padding: 20px; */
   margin: 20px 10px 50px 10px;
-
   height: 200px;
+  cursor: pointer;
+}
+
+.full-recipe {
+  background-image: url(../../assets/pictures/ella-olsson-rD3YrnhTmf0-unsplash.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+
+.box-shadow {
+  background-color: rgba(0, 0, 0, 0.749);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .ratings {
   display: flex;
   flex-direction: row;
+}
+
+@media (min-width: 769px) {
+  .full-recipe {
+    padding: 60px;
+    margin: 30px;
+  }
+
+  .box-shadow {
+    padding: 40px;
+  }
+}
+@media (min-width: 800px) {
+  .full-recipe {
+    max-width: 740px;
+  }
+
+  .recipe-big-parent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }

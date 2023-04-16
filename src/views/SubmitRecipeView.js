@@ -9,16 +9,16 @@ function RecipeForm() {
   };
 
   return (
-    <div>
-      <h1>My Recipes</h1>
+    <div className="view-divs">
+      <h1>Mina Recept</h1>
       <SubmitRecipe onSubmit={handleAddRecipe} />
       <ul>
         {recipes.map((recipe, index) => (
           <li key={index}>
             <h2>{recipe.name}</h2>
-            <h3>Ingredients:</h3>
+            <h3>Ingredienser:</h3>
             <p>{recipe.ingredients}</p>
-            <h3>Instructions:</h3>
+            <h3>Instruktioner:</h3>
             <p>{recipe.instructions}</p>
           </li>
         ))}

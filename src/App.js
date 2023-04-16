@@ -30,23 +30,24 @@ import HomeView from "./views/HomeView";
 import RecipeView from "./views/RecipeView";
 import LoginView from "./views/LoginView";
 import FavoritesView from "./views/FavoritesView";
-import ShoppingListView from "./views/ShoppingListView";
 import SubmitRecipeView from "./views/SubmitRecipeView";
-
+// import { RecipeContext } from "./components/RecipeContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import { ThemeProvider } from "./components/ThemeContext";
 import { createHashRouter, Outlet, RouterProvider } from "react-router-dom";
-import CategoryList from "./components/CategoryList";
+import CategoryView from "./views/CategoryView";
 
 function Root() {
   return (
     <div className="app">
-      <Navbar />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
+      <ThemeProvider>
+        <Navbar />
+        <main>
+          <Outlet />
+        </main>
+        <Footer />
+      </ThemeProvider>
     </div>
   );
 }
@@ -56,14 +57,12 @@ function App() {
     {
       children: [
         { element: <HomeView />, path: "/" },
-        { element: <CategoryList />, path: "/category/:id" },
-        { element: <RecipeView />, path: "/Recipes/:id/:id" },
-        { element: <RecipeView />, path: "/Recipes/:id" },
-        { element: <RecipeView />, path: "/Recipes" },
-        { element: <FavoritesView />, path: "/Favorites" },
-        { element: <ShoppingListView />, path: "/Shoppinglist" },
-        { element: <SubmitRecipeView />, path: "/My-recipes" },
+        { element: <CategoryView />, path: "/Recipes/:id" },
+        { element: <RecipeView />, path: "/Recipes/:category/:id" },
 
+        { element: <CategoryView />, path: "/Recipes" },
+        { element: <FavoritesView />, path: "/Favorites" },
+        { element: <SubmitRecipeView />, path: "/My-recipes" },
         { element: <LoginView />, path: "/Login" },
       ],
       element: <Root />,
