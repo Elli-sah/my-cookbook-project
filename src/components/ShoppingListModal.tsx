@@ -7,12 +7,11 @@ interface ShoppingItem {
   id: number;
   name: string;
   quantity: number;
-  checked: boolean; // Add checked property to ShoppingItem interface
+  checked: boolean;
 }
 
 const ShoppingListModal: React.FC = () => {
   const [items, setItems] = useState<ShoppingItem[]>(() => {
-    // Retrieve items from sessionStorage on component mount
     const storedItems = sessionStorage.getItem("shoppingListItems");
     return storedItems ? JSON.parse(storedItems) : [];
   });
@@ -22,7 +21,6 @@ const ShoppingListModal: React.FC = () => {
   const [newItemQuantity, setNewItemQuantity] = useState<number>(1);
 
   useEffect(() => {
-    // Load items from sessionStorage on component mount
     const storedItems = sessionStorage.getItem("shoppingListItems");
     if (storedItems) {
       setItems(JSON.parse(storedItems));
@@ -30,7 +28,6 @@ const ShoppingListModal: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    // Store items in sessionStorage whenever items change
     sessionStorage.setItem("shoppingListItems", JSON.stringify(items));
   }, [items]);
 
@@ -40,7 +37,7 @@ const ShoppingListModal: React.FC = () => {
         id: Date.now(),
         name: newItemName.trim(),
         quantity: newItemQuantity,
-        checked: false, // Initialize checked property to false
+        checked: false,
       };
       setItems([...items, newItem]);
       setNewItemName("");
@@ -62,12 +59,12 @@ const ShoppingListModal: React.FC = () => {
 
   const handleModalOpen = () => {
     setIsModalOpen(true);
-    document.body.classList.add("slide-in"); // Add slide-in class to body
+    document.body.classList.add("slide-in");
   };
 
   const handleModalClose = () => {
     setIsModalOpen(false);
-    document.body.classList.remove("slide-in"); // Remove slide-in class from body
+    document.body.classList.remove("slide-in");
   };
 
   return (
@@ -121,7 +118,6 @@ const ShoppingListModal: React.FC = () => {
                       type="number"
                       value={item.quantity}
                       onChange={(e) => {
-                        // Update quantity directly in state
                         setItems((prevItems) => {
                           return prevItems.map((prevItem) => {
                             if (prevItem.id === item.id) {
@@ -136,20 +132,6 @@ const ShoppingListModal: React.FC = () => {
                       }}
                       className="quantity-2"
                     />
-                    {/* <div className="quantity-arrows">
-                      <span
-                        className="quantity-up"
-                        onClick={() => handleIncrementQuantity(item.id)} // Call function to increase quantity
-                      >
-                        &#x25B2;
-                      </span>
-                      <span
-                        className="quantity-down"
-                        onClick={() => handleDecrementQuantity(item.id)} // Call function to decrease quantity
-                      >
-                        &#x25BC;
-                      </span>
-                    </div> */}
                   </div>
                   <span
                     className="remove-item"

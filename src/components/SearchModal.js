@@ -29,9 +29,9 @@ export default function SearchModal() {
   }, []);
 
   const handleSearch = (event) => {
-    event.preventDefault(); // Prevent form submission
-    setSearchTerm(searchText); // Update searchTerm with searchText
-    // Perform search using searchTerm
+    event.preventDefault();
+    setSearchTerm(searchText);
+
     const filteredRecipes = searchData.filter((recipe) =>
       recipe.recipe_name.toLowerCase().includes(searchTerm.toLowerCase())
     );

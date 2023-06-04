@@ -1,22 +1,6 @@
-/* .button {
-  background-color: white;
-  border: 1px solid #e8cac3;
-  font-family: Lato, sans-serif;
-  width: 150px;
-  height: 40px;
-  border-radius: 20px;
-  border: none;
-  margin: 15px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  line-height: 40px;
-  text-align: center;
-} */
-
 .category-buttons {
   display: flex;
   flex-direction: column;
-  /* background-color: rgba(253, 164, 56, 0.778); */
   margin: 10px;
   border-radius: 19px;
   cursor: pointer;

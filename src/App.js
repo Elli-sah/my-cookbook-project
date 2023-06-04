@@ -1,42 +1,15 @@
-// import { HashRouter, Routes, Route } from "react-router-dom";
-// import HomeView from "./views/HomeView";
-// import RecipeView from "./views/RecipeView";
-// import LoginView from "./views/LoginView";
-// import Navbar from "./components/Navbar";
-// import Footer from "./components/Footer";
-
-// function App() {
-//   return (
-//     <HashRouter>
-//       <header>
-//         <div>
-//           <Navbar />
-//           <main></main>
-//           <Footer />
-//           <Routes>
-//             <Route path="/" element={<HomeView />} />
-//             <Route path="/Recipes" component={<RecipeView />} />
-//             <Route path="/Login" component={<LoginView />} />
-//           </Routes>
-//         </div>
-//       </header>
-//     </HashRouter>
-//   );
-// }
-
-// export default App;
 import "./index.css";
+import React from "react";
 import HomeView from "./views/HomeView";
 import RecipeView from "./views/RecipeView";
 import LoginView from "./views/LoginView";
 import FavoritesView from "./views/FavoritesView";
 import SubmitRecipeView from "./views/SubmitRecipeView";
-// import { RecipeContext } from "./components/RecipeContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { ThemeProvider } from "./components/ThemeContext";
 import { createHashRouter, Outlet, RouterProvider } from "react-router-dom";
 import CategoryView from "./views/CategoryView";
+import { ThemeProvider } from "./components/ThemeContext";
 
 function Root() {
   return (
@@ -52,7 +25,7 @@ function Root() {
   );
 }
 
-function App() {
+export default function App() {
   const router = createHashRouter([
     {
       children: [
@@ -69,7 +42,9 @@ function App() {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />{" "}
+    </>
+  );
 }
-
-export default App;

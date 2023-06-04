@@ -164,7 +164,6 @@
   justify-content: flex-end;
 }
 
-/* Update styles for desktop */
 @media (min-width: 769px) {
   .modal-container {
     justify-content: center;

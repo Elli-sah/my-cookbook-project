@@ -4,8 +4,6 @@ import { VscAccount } from "react-icons/vsc";
 import { VscHeart } from "react-icons/vsc";
 import SearchModal from "./SearchModal";
 import ShoppingListModal from "./ShoppingListModal";
-import { ThemeProvider } from "./ThemeContext";
-
 import "../css/Navbar.css";
 
 function Navbar() {
@@ -14,12 +12,12 @@ function Navbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Update isMobile state based on viewport width
+      setIsMobile(window.innerWidth <= 768);
     };
     window.addEventListener("resize", handleResize);
-    handleResize(); // Call handleResize initially to set isMobile state
+    handleResize();
     return () => {
-      window.removeEventListener("resize", handleResize); // Clean up event listener on unmount
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -79,9 +77,7 @@ function Navbar() {
             <div className="nav-text">
               <Link to="/">Kokboken.se</Link>
             </div>
-            <div>
-              <button onClick={ThemeProvider.toggleTheme}> Themes</button>
-            </div>
+            <div></div>
             <div className="nav-icon-box">
               {isMobile ? (
                 <div>

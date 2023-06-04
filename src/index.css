@@ -3,12 +3,8 @@ html {
 }
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url(../assets/olga-thelavart-HZm2XR0whdw-unsplash.jpg); */
   background-color: rgb(255, 255, 255);
   color: black;
   font-family: Alegreya;
@@ -40,7 +36,7 @@ h1 {
   height: fit-content;
   min-height: 950px;
   width: 100%;
-  padding: 0 0 100px 0;
+  padding: 0 0 0px 0;
 }
 
 .nav li {

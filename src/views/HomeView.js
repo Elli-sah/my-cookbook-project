@@ -1,5 +1,6 @@
 import "../css/HomeView.css";
 import { Link } from "react-router-dom";
+import Themes from "../components/Themes";
 
 function home() {
   return (
@@ -27,7 +28,6 @@ function home() {
           </p> */}
         </div>
       </div>
-      {/* <div className="box"> */}
       <div className="start-categories">
         <Link to="/Recipes/Brunch">
           <div className="round-categories brunch ">Brunch</div>
@@ -52,7 +52,7 @@ function home() {
           <div className="round-categories cold-dishes">Kallrätter</div>
         </Link>
       </div>
-      {/* </div> */}
+
       <div className="start-block-1">
         <div className="image-b1"></div>
         <div className="text-b1">
@@ -88,6 +88,9 @@ function home() {
           </Link>
         </div>
         <div className="image-b2"></div>
+      </div>
+      <div className="theme">
+        <Themes />
       </div>
     </div>
   );

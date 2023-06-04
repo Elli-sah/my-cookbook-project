@@ -49,7 +49,6 @@ var ri_1 = require("react-icons/ri");
 var react_bootstrap_1 = require("react-bootstrap");
 var ShoppingListModal = function () {
     var _a = (0, react_1.useState)(function () {
-        // Retrieve items from sessionStorage on component mount
         var storedItems = sessionStorage.getItem("shoppingListItems");
         return storedItems ? JSON.parse(storedItems) : [];
     }), items = _a[0], setItems = _a[1];
@@ -58,14 +57,12 @@ var ShoppingListModal = function () {
     var _d = (0, react_1.useState)(""), newItemName = _d[0], setNewItemName = _d[1];
     var _e = (0, react_1.useState)(1), newItemQuantity = _e[0], setNewItemQuantity = _e[1];
     (0, react_1.useEffect)(function () {
-        // Load items from sessionStorage on component mount
         var storedItems = sessionStorage.getItem("shoppingListItems");
         if (storedItems) {
             setItems(JSON.parse(storedItems));
         }
     }, []);
     (0, react_1.useEffect)(function () {
-        // Store items in sessionStorage whenever items change
         sessionStorage.setItem("shoppingListItems", JSON.stringify(items));
     }, [items]);
     var handleAddItem = function () {
@@ -91,11 +88,11 @@ var ShoppingListModal = function () {
     };
     var handleModalOpen = function () {
         setIsModalOpen(true);
-        document.body.classList.add("slide-in"); // Add slide-in class to body
+        document.body.classList.add("slide-in");
     };
     var handleModalClose = function () {
         setIsModalOpen(false);
-        document.body.classList.remove("slide-in"); // Remove slide-in class from body
+        document.body.classList.remove("slide-in");
     };
     return (react_1["default"].createElement(react_1["default"].Fragment, null,
         react_1["default"].createElement(ri_1.RiTodoLine, { onClick: handleModalOpen, className: "open-modal-button nav-icons" }),
@@ -118,7 +115,6 @@ var ShoppingListModal = function () {
                             " st)"),
                         react_1["default"].createElement("div", { className: "quantity-controls" },
                             react_1["default"].createElement("input", { type: "number", value: item.quantity, onChange: function (e) {
-                                    // Update quantity directly in state
                                     setItems(function (prevItems) {
                                         return prevItems.map(function (prevItem) {
                                             if (prevItem.id === item.id) {
